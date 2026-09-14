@@ -884,7 +884,7 @@
     <div class="container">
       <div class="calc-box">
         <div class="calc-inputs">
-          <div class="section-tag" style="background: rgba(13, 148, 136, 0.2); color: var(--accent-cyan);">
+          <div class="section-tag calc-tag">
             Interactive Calculator
           </div>
           <h2 class="calc-title">Calculate Your Adherence Protection</h2>
@@ -893,7 +893,7 @@
           <div class="input-group">
             <label>
               <span>Daily Medications Per Patient</span>
-              <span id="meds-val" style="color: var(--accent-cyan);">4</span>
+              <span id="meds-val" class="calc-val-accent">4</span>
             </label>
             <input type="range" id="meds-slider" class="range-slider" min="1" max="10" value="4">
           </div>
@@ -901,7 +901,7 @@
           <div class="input-group">
             <label>
               <span>Number of Monitored Patients</span>
-              <span id="patients-val" style="color: var(--accent-cyan);">1</span>
+              <span id="patients-val" class="calc-val-accent">1</span>
             </label>
             <input type="range" id="patients-slider" class="range-slider" min="1" max="25" value="1">
           </div>
@@ -910,9 +910,9 @@
         <div class="calc-results">
           <div class="calc-result-number" id="prevented-val">467</div>
           <div class="calc-result-label">Missed or Incorrect Doses Prevented Annually</div>
-          <div class="peace-score-box">
-            <div class="peace-score-lbl">Verified Caregiver Confidence Index</div>
-            <div class="peace-score-text" id="peace-score">98.4%</div>
+          <div class="calc-score-wrapper">
+            <div class="calc-score-lbl">Verified Caregiver Confidence Index</div>
+            <div class="calc-score-val" id="peace-score">98.4%</div>
           </div>
         </div>
       </div>

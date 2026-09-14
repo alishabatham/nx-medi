@@ -1517,14 +1517,20 @@ img {
 .calc-inputs {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+}
+
+.calc-tag {
+  background: rgba(13, 148, 136, 0.2);
+  color: var(--accent-cyan);
+  align-self: flex-start;
 }
 
 .calc-title {
   color: white;
-  font-size: 2.1rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
   line-height: 1.25;
-  margin-bottom: 8px;
 }
 
 .calc-desc {
@@ -1533,12 +1539,16 @@ img {
   line-height: 1.6;
 }
 
+.calc-val-accent {
+  color: var(--accent-cyan);
+}
+
 .input-group label {
   display: flex;
   justify-content: space-between;
   font-weight: 700;
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .range-slider {
@@ -1569,20 +1579,21 @@ img {
 .calc-result-label {
   font-size: 0.95rem;
   color: #94A3B8;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-.peace-score-box {
+.calc-score-wrapper {
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.peace-score-lbl {
-  font-size: 0.9rem;
+.calc-score-lbl {
+  font-size: 0.88rem;
   color: #94A3B8;
+  margin-bottom: 4px;
 }
 
-.peace-score-text {
+.calc-score-val {
   font-size: 1.75rem;
   font-weight: 800;
   color: white;
@@ -2191,7 +2202,9 @@ img {
 
   .benefit-box p {
     font-size: 0.82rem;
-  }  /* Calculator Mobile */
+  }
+
+  /* Calculator Mobile */
   .calc-box {
     padding: 18px 14px;
     border-radius: var(--radius-md);
@@ -2201,17 +2214,20 @@ img {
   .calc-title {
     font-size: 1.35rem;
     line-height: 1.3;
-    margin-bottom: 6px;
   }
 
   .calc-desc {
     font-size: 0.82rem;
-    line-height: 1.45;
+    line-height: 1.5;
+  }
+
+  .calc-inputs {
+    gap: 14px;
   }
 
   .input-group label {
-    font-size: 0.8rem;
-    margin-bottom: 4px;
+    font-size: 0.78rem;
+    margin-bottom: 6px;
   }
 
   .calc-results {
@@ -2220,25 +2236,30 @@ img {
   }
 
   .calc-result-number {
-    font-size: 1.95rem;
+    font-size: 1.9rem;
+    margin-bottom: 4px;
   }
 
   .calc-result-label {
     font-size: 0.78rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
-  .peace-score-lbl {
-    font-size: 0.78rem;
+  .calc-score-wrapper {
+    padding-top: 12px;
   }
 
-  .peace-score-text {
-    font-size: 1.35rem;
+  .calc-score-lbl {
+    font-size: 0.75rem;
+  }
+
+  .calc-score-val {
+    font-size: 1.3rem;
   }
 
   /* Final CTA Mobile */
   .final-cta {
-    padding: 40px 0;
+    padding: 45px 0;
   }
 
   .final-cta h2 {
@@ -2247,63 +2268,62 @@ img {
 
   .final-cta p {
     font-size: 0.85rem;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   /* Footer Mobile */
   .footer {
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-top: 45px;
+    padding-bottom: 30px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
-    margin-bottom: 30px;
+    gap: 28px;
+    margin-bottom: 36px;
   }
 
   .footer-bottom {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     text-align: center;
-    font-size: 0.8rem;
   }
 
   /* Modal Popup Mobile */
   .modal-card {
-    padding: 20px 16px;
-    max-width: 94%;
+    padding: 22px 18px;
+    max-width: 92%;
     border-radius: var(--radius-md);
   }
 
   .modal-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .modal-card p {
-    font-size: 0.82rem;
-    margin-bottom: 14px;
+    font-size: 0.84rem;
+    margin-bottom: 16px;
   }
 
   .form-group input, .form-group select, .form-group textarea {
-    padding: 9px 12px;
+    padding: 10px 14px;
     font-size: 0.84rem;
   }
 
   /* Toast Mobile */
   .toast {
-    bottom: 14px;
-    right: 14px;
-    left: 14px;
-    padding: 10px 14px;
-    font-size: 0.8rem;
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    padding: 12px 16px;
+    font-size: 0.84rem;
   }
 }
 
 /* Extra Small Phones (< 480px) */
 @media (max-width: 480px) {
   html {
-    font-size: 13px;
+    font-size: 13.5px;
   }
 
   .container {
@@ -2311,38 +2331,40 @@ img {
   }
 
   .hero-content h1 {
-    font-size: 1.6rem;
-    line-height: 1.25;
+    font-size: 1.55rem;
   }
 
   .hero-subtitle {
-    font-size: 0.85rem;
-  }
-
-  .btn {
-    padding: 8px 14px;
-    font-size: 0.78rem;
-  }
-
-  .tab-btn {
-    font-size: 0.76rem;
-    padding: 7px 10px;
+    font-size: 0.84rem;
   }
 
   .section-title {
     font-size: 1.35rem;
   }
 
+  .section-desc {
+    font-size: 0.82rem;
+  }
+
   .calc-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .calc-result-number {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    padding: 7px 14px;
+    font-size: 0.76rem;
+  }
+
+  .tab-btn {
+    font-size: 0.76rem;
+    padding: 7px 12px;
   }
 
   .works-step-item, .problem-card, .feature-card, .audience-card, .loop-card, .roadmap-card, .benefit-box {
     padding: 12px 10px;
   }
-}
 }
