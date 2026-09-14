@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NX Medi — Smart Medication Management Platform | IoT MedTech Solutions</title>
+  <meta name="description" content="NX Medi is an IoT-enabled smart medication management platform that automates dispensing, reminds patients, verifies dose collection, and alerts caregivers in real time. Don't just remind. Verify.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230D9488'><path d='M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-15z'/><path d='M10.5 4.5C10.5 3.67 11.17 3 12 3s1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-15z'/></svg>">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+          </svg>
+        </div>
+        <span>NX</span> Medi
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#hardware">The Device</a></li>
+          <li><a href="#apps">Apps & Portal</a></li>
+          <li><a href="#who-we-serve">Who We Serve</a></li>
+          <li><a href="#impact">Impact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-secondary open-modal-btn">Contact Us</a>
+        <a href="#demo" class="btn btn-primary open-modal-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-tag">
+          <span class="dot"></span>
+          IoT-Enabled MedTech Ecosystem
+        </div>
+        
+        <h1>Smarter Medication.<br><span>Safer Care.</span></h1>
+        
+        <p class="hero-subtitle">
+          NX Medi is an IoT-powered smart medication management system that automates dispensing, reminds patients, verifies dose collection and keeps caregivers connected in real time.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#features" class="btn btn-primary">
+            Explore NX Medi
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-item">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+            HIPAA-Compliant Ready
+          </div>
+          <div class="trust-item">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            Cellular + Wi-Fi IoT Sync
+          </div>
+          <div class="trust-item">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+            Tamper-Proof Hardware
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="assets/dispenser_hero.jpg" alt="NX Medi Smart Medication Dispenser Medical Device">
+          <div class="hero-status-float">
+            <div class="status-info">
+              <div class="status-icon">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="status-title">NEXT SCHEDULED DOSE</div>
+                <div class="status-value">Morning Meds • 09:00 AM</div>
+              </div>
+            </div>
+            <div class="status-badge">DOSE VERIFIED</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section id="about" class="section-padding problem-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          The Healthcare Challenge
+        </div>
+        <h2 class="section-title">The Hidden Medication Adherence Crisis</h2>
+        <p class="section-desc mx-auto">
+          Medication non-adherence leads to over 125,000 avoidable deaths and $300B in preventable medical costs annually. Traditional pill boxes and notification apps rely on guesswork.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-cards-column">
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Forgetting Doses & Wrong Timing</h4>
+              <p>Patients managing multiple prescriptions often misplace doses or take medications at incorrect intervals, causing treatment failures.</p>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Accidental Double-Dosing Risks</h4>
+              <p>Without secure automated compartments, elderly patients can easily confuse morning and evening pills, triggering dangerous overdose events.</p>
+            </div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Caregiver Blindspot & Anxiety</h4>
+              <p>Family members living remotely cannot confirm whether a patient actually swallowed their medicine or simply dismissed a phone alarm.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-visual-box">
+          <img src="assets/elderly_caregiver.jpg" alt="Elderly Patient and Caregiver managing medication adherence with smart mobile application">
+          <div class="problem-visual-overlay">
+            <div class="problem-overlay-content">
+              <h3>Empowering Independent Living</h3>
+              <p>NX Medi bridges the gap between home independence and peace of mind for loved ones, turning uncertainty into verifiable safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-callout-row">
+        <div class="stat-item">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Chronic Patients Miss Scheduled Doses</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98.4%</div>
+          <div class="stat-label">NX Medi Verified Adherence Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Real-Time Caregiver Visibility</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The NX Medi Solution Section -->
+  <section class="section-padding solution-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Closed-Loop Platform
+        </div>
+        <h2 class="section-title">The Complete Closed-Loop Healthcare System</h2>
+        <p class="section-desc mx-auto">
+          Unlike ordinary reminder apps, NX Medi connects physical hardware automation with real-time cloud analytics to guarantee dose collection.
+        </p>
+      </div>
+
+      <div class="loop-workflow-container">
+        <div class="loop-grid">
+          <div class="loop-card">
+            <div class="loop-step-num">1</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <h4>Prescription Upload</h4>
+            <p>Digital prescription ingestion & dosage timetable auto-generation.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">2</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h4>Smart Schedule</h4>
+            <p>Tailored daily dose timeline synced across patient & provider devices.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">3</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <h4>Load Pods</h4>
+            <p>Secure pre-filled blister pods loaded in locked hardware compartments.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">4</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+            </div>
+            <h4>Smart Alert</h4>
+            <p>Gentle voice, LED glowing ring & smartphone alert triggers simultaneously.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">5</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <h4>Auto Dispense</h4>
+            <p>Motorized tray releases exact dose pod into accessible chute.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">6</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h4>Dose Verification</h4>
+            <p>Optical & weight sensors verify physical removal of medication pod.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">7</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 001-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+              </svg>
+            </div>
+            <h4>Cloud Sync</h4>
+            <p>Encrypted adherence telematics uploaded to secure HIPAA cloud.</p>
+          </div>
+
+          <div class="loop-card">
+            <div class="loop-step-num">8</div>
+            <div class="loop-icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h4>Caregiver Alert</h4>
+            <p>Real-time confirmation or missed dose escalation to loved ones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How NX Medi Works Section -->
+  <section id="how-it-works" class="section-padding how-it-works-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Step-by-Step Experience
+        </div>
+        <h2 class="section-title">How NX Medi Operates</h2>
+        <p class="section-desc mx-auto">
+          Designed for total ease of use by elderly patients while maintaining rigorous clinical adherence verification for family and doctors.
+        </p>
+      </div>
+
+      <div class="works-interactive-wrapper">
+        <div class="works-steps-list">
+          <div class="works-step-item active">
+            <div class="works-step-badge">1</div>
+            <div class="works-step-content">
+              <h4>Upload & Sync Prescription</h4>
+              <p>Scan prescription or sync via healthcare provider portal.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">2</div>
+            <div class="works-step-content">
+              <h4>Create Medication Schedule</h4>
+              <p>Configure morning, afternoon, evening & bedtime dosage rules.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">3</div>
+            <div class="works-step-content">
+              <h4>Load Sealed Blister Packs</h4>
+              <p>Insert tamper-proof medication pods into secure locked slots.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">4</div>
+            <div class="works-step-content">
+              <h4>Receive Smart Reminder</h4>
+              <p>Voice alerts, LED ring lights, and app notifications activate.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">5</div>
+            <div class="works-step-content">
+              <h4>Automatic Dispensing</h4>
+              <p>Correct dose is safely released into the retrieval tray.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">6</div>
+            <div class="works-step-content">
+              <h4>Dose Collection Verification</h4>
+              <p>Sensors confirm medication pickup event in real time.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">7</div>
+            <div class="works-step-content">
+              <h4>Encrypted Cloud Sync</h4>
+              <p>Adherence telemetry synced to cloud caregiver dashboard.</p>
+            </div>
+          </div>
+
+          <div class="works-step-item">
+            <div class="works-step-badge">8</div>
+            <div class="works-step-content">
+              <h4>Real-Time Caregiver Update</h4>
+              <p>Caregivers get peace-of-mind status or escalation alerts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="works-preview-display">
+          <div class="preview-chip" id="preview-chip">STEP 1 • PRESCRIPTION DIGITIZATION</div>
+          <div class="preview-graphic-box">
+            <div class="preview-graphic-icon">
+              <svg id="preview-icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="preview-title" id="preview-title">1. Prescription Upload & OCR Sync</h3>
+          <p class="preview-desc" id="preview-desc">
+            Caregivers or physicians scan or upload official prescriptions using the NX Medi app. Our cloud engine parses dosage times, medication rules, and refill dates automatically.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Grid -->
+  <section id="features" class="section-padding features-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          System Modules & Capabilities
+        </div>
+        <h2 class="section-title">Built with Advanced Medical Technology</h2>
+        <p class="section-desc mx-auto">
+          Every feature in NX Medi is engineered to eliminate human error, protect patients, and give caregivers absolute certainty.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.154-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <h3>Automated Dispensing</h3>
+          <p>Dispenses exact medication doses automatically at pre-programmed schedule times, eliminating manual handling errors.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            </svg>
+          </div>
+          <h3>Smart Reminders</h3>
+          <p>Clear natural voice prompts, 360-degree ambient LED ring lights, and smartphone alerts guide patients when meds are ready.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Dose Verification</h3>
+          <p>Integrated optical infrared sensors and weight detectors confirm physical retrieval of the dispensed blister pod.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <h3>Real-Time Alerts</h3>
+          <p>Missed doses automatically trigger SMS, push notifications, or automated voice phone calls to designated caregivers.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 001-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+            </svg>
+          </div>
+          <h3>Cloud Connectivity</h3>
+          <p>Built-in cellular LTE and Wi-Fi modules sync adherence records instantly without requiring complex home setup.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3>Caregiver Dashboard</h3>
+          <p>Comprehensive remote monitoring portal showing adherence %, upcoming doses, patient logs, and historical trends.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3>Secure Storage</h3>
+          <p>Locking medical-grade enclosure prevents double-dosing, unauthorized access, or child tampering.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+            </svg>
+          </div>
+          <h3>Adherence Analytics</h3>
+          <p>Generates objective clinical adherence reports for doctors during follow-up visits to optimize therapy outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Product Showcase -->
+  <section id="hardware" class="section-padding showcase-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto" style="background: rgba(13, 148, 136, 0.2); color: var(--accent-cyan);">
+          <span class="dot" style="background-color: var(--accent-cyan);"></span>
+          Hardware Architecture
+        </div>
+        <h2 class="section-title">The NX Medi Smart Dispenser</h2>
+        <p class="section-desc mx-auto">
+          A sleek, medical-grade physical device engineered for home reliability, accessibility, and tamper-proof security.
+        </p>
+      </div>
+
+      <div class="showcase-container">
+        <div class="showcase-visual-wrapper">
+          <div class="showcase-image-box">
+            <img src="assets/dispenser_hero.jpg" alt="NX Medi Dispenser Hotspot Diagrams">
+            
+            <div class="hotspot hotspot-1 active" data-target="1">1</div>
+            <div class="hotspot hotspot-2" data-target="2">2</div>
+            <div class="hotspot hotspot-3" data-target="3">3</div>
+            <div class="hotspot hotspot-4" data-target="4">4</div>
+          </div>
+        </div>
+
+        <div class="showcase-details">
+          <div class="showcase-spec-card active" id="spec-1">
+            <div class="spec-header">
+              <div class="spec-number">1</div>
+              <h4>High-Contrast OLED Screen</h4>
+            </div>
+            <p>Displays clear medication name, dosage instructions, time countdown, and battery health in large, easy-to-read text.</p>
+          </div>
+
+          <div class="showcase-spec-card" id="spec-2">
+            <div class="spec-header">
+              <div class="spec-number">2</div>
+              <h4>360° Ambient LED Ring</h4>
+            </div>
+            <p>Provides gentle visual cues (Soothing Teal = Ready, Soft Amber = Pending, Gentle Red = Missed) visible from across the room.</p>
+          </div>
+
+          <div class="showcase-spec-card" id="spec-3">
+            <div class="spec-header">
+              <div class="spec-number">3</div>
+              <h4>Dispensing Chute & Optical Sensors</h4>
+            </div>
+            <p>Motorized tray releases sealed blister pods into a lighted chute. Infrared beam break sensors verify physical removal.</p>
+          </div>
+
+          <div class="showcase-spec-card" id="spec-4">
+            <div class="spec-header">
+              <div class="spec-number">4</div>
+              <h4>Cellular + Battery Backup Module</h4>
+            </div>
+            <p>Embedded IoT cellular transmitter ensures data sync even during home Wi-Fi outages. Internal battery offers 48h emergency power.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps & Dashboard Section -->
+  <section id="apps" class="section-padding apps-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Connected Software Ecosystem
+        </div>
+        <h2 class="section-title">Patient App & Caregiver Portal</h2>
+        <p class="section-desc mx-auto">
+          Designed with purpose: an ultra-accessible interface for patients and a comprehensive analytical dashboard for caregivers and clinicians.
+        </p>
+      </div>
+
+      <div class="app-tabs-header">
+        <button class="tab-btn active" data-tab="tab-patient">Patient Mobile App</button>
+        <button class="tab-btn" data-tab="tab-caregiver">Caregiver Dashboard</button>
+      </div>
+
+      <div class="app-mockup-frame">
+        <!-- Patient App View -->
+        <div class="tab-content active" id="tab-patient">
+          <div class="patient-app-grid">
+            <div class="phone-mockup">
+              <!-- Phone Hardware Speaker & Camera Island -->
+              <div class="phone-notch">
+                <div class="notch-camera"></div>
+                <div class="notch-speaker"></div>
+              </div>
+
+              <div class="phone-screen">
+                <!-- Mobile OS Status Bar -->
+                <div class="phone-os-bar">
+                  <span class="os-time">9:41</span>
+                  <div class="os-icons">
+                    <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zm6-4a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zm6-3a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                    <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.778 8.232c-2.403-2.404-5.698-3.727-9.096-3.727s-6.693 1.323-9.096 3.727a1 1 0 001.414 1.414c1.99-1.99 4.707-3.084 7.682-3.084s5.692 1.094 7.682 3.084a1 1 0 101.414-1.414zM14.95 11.06a8.97 8.97 0 00-6.268-2.58 8.97 8.97 0 00-6.268 2.58 1 1 0 001.414 1.414 6.97 6.97 0 014.854-2 6.97 6.97 0 014.854 2 1 1 0 001.414-1.414zm-2.828 2.828a4.982 4.982 0 00-3.44-1.408 4.982 4.982 0 00-3.44 1.408 1 1 0 101.414 1.414 2.986 2.986 0 012.026-.822c.76 0 1.472.296 2.026.822a1 1 0 001.414-1.414zM8.682 16.716a1 1 0 110-2 1 1 0 010 2z" clip-rule="evenodd"/></svg>
+                    <svg width="15" height="13" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2H4zm13 3a1 1 0 010 2h-1a1 1 0 010-2h1z" clip-rule="evenodd"/></svg>
+                  </div>
+                </div>
+
+                <!-- App Profile Header -->
+                <div class="phone-app-header">
+                  <div class="user-avatar-wrap">
+                    <div class="avatar-circle">EV</div>
+                    <div>
+                      <div class="user-greeting">Good Morning 👋</div>
+                      <div class="user-name">Eleanor Vance</div>
+                    </div>
+                  </div>
+                  <div class="app-live-indicator">
+                    <span class="live-dot"></span>
+                    Syncing
+                  </div>
+                </div>
+
+                <!-- Today's Schedule Header -->
+                <div class="schedule-section-header">
+                  <span>TODAY'S DOSES</span>
+                  <span class="schedule-progress">1 of 3 Done</span>
+                </div>
+
+                <!-- Dose Cards -->
+                <div class="dose-card-item done">
+                  <div class="dose-card-main">
+                    <div class="dose-time-row">
+                      <span class="dose-time-text">08:00 AM</span>
+                      <span class="dose-badge badge-taken">✓ Taken</span>
+                    </div>
+                    <div class="dose-med-name">Lisinopril 10mg</div>
+                    <div class="dose-sub-info">1 Pod • Blood Pressure</div>
+                  </div>
+                  <div class="dose-icon-circle icon-done">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="dose-card-item ready">
+                  <div class="dose-card-main">
+                    <div class="dose-time-row">
+                      <span class="dose-time-text">01:00 PM</span>
+                      <span class="dose-badge badge-ready">⏰ Ready to Take</span>
+                    </div>
+                    <div class="dose-med-name">Metformin 500mg</div>
+                    <div class="dose-sub-info">1 Pod • Glucose Control</div>
+                  </div>
+                  <div class="dose-icon-circle icon-ready">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="dose-card-item upcoming">
+                  <div class="dose-card-main">
+                    <div class="dose-time-row">
+                      <span class="dose-time-text">08:00 PM</span>
+                      <span class="dose-badge badge-upcoming">Scheduled</span>
+                    </div>
+                    <div class="dose-med-name">Atorvastatin 20mg</div>
+                    <div class="dose-sub-info">1 Pod • Bedtime</div>
+                  </div>
+                  <div class="dose-icon-circle icon-upcoming">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Device Connection Footer -->
+                <div class="phone-device-status">
+                  <div class="device-status-left">
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                    </svg>
+                    <span>NX Hardware Unit #4092 Connected</span>
+                  </div>
+                  <span class="signal-dot"></span>
+                </div>
+              </div>
+
+              <!-- Phone Bottom Home Bar -->
+              <div class="phone-home-bar"></div>
+            </div>
+
+            <div>
+              <h3 style="font-size: 1.75rem; margin-bottom: 16px;">Simplified Accessibility for Seniors</h3>
+              <p style="color: var(--navy-muted); line-height: 1.7; margin-bottom: 20px;">
+                The patient mobile app features extra-large fonts, single-tap dose confirmations, voice prompt controls, and simplified daily progress visuals. It removes all technology barriers for senior citizens.
+              </p>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+                  <span style="color: var(--primary); font-weight: 800;">✓</span> Large, high-contrast visual dosage timetable
+                </li>
+                <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+                  <span style="color: var(--primary); font-weight: 800;">✓</span> Voice assistant guidance in multiple languages
+                </li>
+                <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+                  <span style="color: var(--primary); font-weight: 800;">✓</span> Instant refill reminder alerts to local pharmacy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caregiver Portal View -->
+        <div class="tab-content" id="tab-caregiver">
+          <div class="dashboard-mockup">
+            <div class="dash-topbar">
+              <div class="dash-title">NX Caregiver Portal • Patient Overview</div>
+              <div class="badge-green">Live IoT Stream Active</div>
+            </div>
+
+            <div class="dash-grid">
+              <div class="dash-card">
+                <div class="dash-card-val">98.4%</div>
+                <div class="dash-card-lbl">Overall Adherence (30 Days)</div>
+              </div>
+              <div class="dash-card">
+                <div class="dash-card-val" style="color: var(--secondary);">0</div>
+                <div class="dash-card-lbl">Missed Doses Today</div>
+              </div>
+              <div class="dash-card">
+                <div class="dash-card-val">12/12</div>
+                <div class="dash-card-lbl">Active Dispenser Blister Pods</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.9rem; font-weight: 700; color: white; margin-bottom: 12px;">PATIENT MONITORING ROSTER</div>
+
+            <div class="dash-patient-list">
+              <div class="dash-patient-row">
+                <div><strong>Eleanor Vance</strong> (Mother) • Dispenser #NX-8821</div>
+                <div class="badge-green">Last Dose Taken: 08:02 AM (Verified)</div>
+              </div>
+              <div class="dash-patient-row">
+                <div><strong>Arthur Pendelton</strong> (Father) • Dispenser #NX-9043</div>
+                <div class="badge-green">Last Dose Taken: 07:45 AM (Verified)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Serve Section -->
+  <section id="who-we-serve" class="section-padding audience-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Tailored Healthcare Solutions
+        </div>
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-desc mx-auto">
+          NX Medi creates tangible value across the entire healthcare continuum — from individual families to enterprise hospital systems.
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="audience-tag">FOR PATIENTS</span>
+          <h3>Elderly & Chronic Patients</h3>
+          <p>Empowers seniors managing multi-pill regimens to live independently at home with zero stress over dose timing or dosage errors.</p>
+        </div>
+
+        <div class="audience-card">
+          <span class="audience-tag">FOR FAMILIES</span>
+          <h3>Caregivers & Families</h3>
+          <p>Provides remote visibility and instant alert escalation, transforming constant worry into complete peace of mind.</p>
+        </div>
+
+        <div class="audience-card">
+          <span class="audience-tag">FOR CLINICIANS</span>
+          <h3>Healthcare Providers</h3>
+          <p>Delivers objective, verified patient adherence data during clinical consultations to make data-driven treatment adjustments.</p>
+        </div>
+
+        <div class="audience-card">
+          <span class="audience-tag">FOR ENTERPRISE</span>
+          <h3>Hospitals & Care Facilities</h3>
+          <p>Scalable post-discharge monitoring that prevents hospital readmissions and lowers overall emergency care costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Benefits Section -->
+  <section id="impact" class="section-padding impact-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Proven Clinical Benefits
+        </div>
+        <h2 class="section-title">Transforming Medication Outcomes</h2>
+        <p class="section-desc mx-auto">
+          Measurable clinical impact designed to improve quality of life and optimize healthcare expenditure.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-box">
+          <h4>Maximizes Adherence Rate</h4>
+          <p>Boosts patient medication compliance to over 98% through automated physical dispensing and verification.</p>
+        </div>
+
+        <div class="benefit-box">
+          <h4>Eliminates Dosing Errors</h4>
+          <p>Controlled, compartment-locked release prevents double-dosing, wrong time, or incorrect drug ingestion.</p>
+        </div>
+
+        <div class="benefit-box">
+          <h4>Reduces Caregiver Stress</h4>
+          <p>Automated real-time notifications eliminate the need for constant phone checks and in-person supervision.</p>
+        </div>
+
+        <div class="benefit-box">
+          <h4>Prevents Hospital Readmission</h4>
+          <p>Keeps post-discharge cardiac, diabetic, and hypertensive patients compliant with life-saving medication plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Vision / Roadmap Section -->
+  <section class="section-padding roadmap-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag mx-auto">
+          <span class="dot"></span>
+          Strategic Ecosystem Roadmap
+        </div>
+        <h2 class="section-title">The Future of Digital Health</h2>
+        <p class="section-desc mx-auto">
+          NX Medi is expanding beyond smart hardware into an end-to-end digital health platform.
+        </p>
+      </div>
+
+      <div class="roadmap-grid">
+        <div class="roadmap-card">
+          <h3>AI Adherence Predictive Engine</h3>
+          <p>Machine learning models that analyze historical dosing patterns to predict potential missed doses and initiate proactive intervention.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Hospital System (HIS) Integration</h3>
+          <p>Direct electronic health record (EHR) synchronization with hospital software for seamless e-prescriptions and clinical monitoring.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Telemedicine Consultation Sync</h3>
+          <p>Live adherence score feeds integrated into physician video consultations to provide objective medication insights.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Smart Pharmacy Auto-Refill</h3>
+          <p>Automated inventory tracking that notifies partner pharmacies when pill supplies run low, dispatching sealed replacement blister pods.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Wearable Vital Telemetry</h3>
+          <p>Correlates verified dose collection events with real-time blood pressure, glucose, and heart rate readings from smart wearables.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Rural & Underserved Healthcare</h3>
+          <p>Connectivity-flexible hardware designed for low-bandwidth rural health clinics and community healthcare worker programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adherence Impact Calculator Section -->
+  <section class="section-padding calculator-section">
+    <div class="container">
+      <div class="calc-box">
+        <div class="calc-inputs">
+          <div class="section-tag" style="background: rgba(13, 148, 136, 0.2); color: var(--accent-cyan);">
+            Interactive Calculator
+          </div>
+          <h2 class="calc-title">Calculate Your Adherence Protection</h2>
+          <p class="calc-desc">See how many missed medication events NX Medi can prevent for your family or clinic each year.</p>
+
+          <div class="input-group">
+            <label>
+              <span>Daily Medications Per Patient</span>
+              <span id="meds-val" style="color: var(--accent-cyan);">4</span>
+            </label>
+            <input type="range" id="meds-slider" class="range-slider" min="1" max="10" value="4">
+          </div>
+
+          <div class="input-group">
+            <label>
+              <span>Number of Monitored Patients</span>
+              <span id="patients-val" style="color: var(--accent-cyan);">1</span>
+            </label>
+            <input type="range" id="patients-slider" class="range-slider" min="1" max="25" value="1">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="calc-result-number" id="prevented-val">467</div>
+          <div class="calc-result-label">Missed or Incorrect Doses Prevented Annually</div>
+          <div class="peace-score-box">
+            <div class="peace-score-lbl">Verified Caregiver Confidence Index</div>
+            <div class="peace-score-text" id="peace-score">98.4%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="contact" class="final-cta">
+    <div class="container">
+      <h2>“Make Every Dose Count.”</h2>
+      <p>Transform medication management from a reminder-based routine into a smarter, safer and verifiable healthcare experience.</p>
+      
+      <div class="final-cta-btns">
+        <a href="#" class="btn btn-secondary open-modal-btn">Get Started</a>
+        <a href="#" class="btn btn-outline-white open-modal-btn">Contact NX Medi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="color: white;">
+            <div class="logo-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+              </svg>
+            </div>
+            <span>NX</span> Medi
+          </a>
+          <p>
+            NX Medi connects medication, technology and care — helping ensure that the right medicine reaches the right patient at the right time, every time.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Platform</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Core Features</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#who-we-serve">For Patients</a></li>
+            <li><a href="#who-we-serve">For Caregivers</a></li>
+            <li><a href="#who-we-serve">For Providers</a></li>
+            <li><a href="#who-we-serve">Hospitals & Health Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Legal</h4>
+          <ul>
+            <li><a href="#contact" class="open-modal-btn">Schedule Demo</a></li>
+            <li><a href="#contact" class="open-modal-btn">Inquire for Pilot</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">HIPAA Compliance Notice</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NX Medi Inc. Smart Medication Management Platform. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Schedule Demo / Contact Popup -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h3>Get Started with NX Medi</h3>
+      <p>Schedule a live platform demonstration or inquire about clinical pilot programs.</p>
+
+      <form class="modal-form" id="demo-modal-form">
+        <div class="form-group">
+          <input type="text" id="form-name" name="name" placeholder="Full Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="form-email" name="email" placeholder="Email Address *" required>
+        </div>
+        <div class="form-group">
+          <select id="form-role" name="role" required>
+            <option value="" disabled selected>I am inquiring as... *</option>
+            <option value="family">Family Caregiver / Individual Patient</option>
+            <option value="physician">Physician / Healthcare Provider</option>
+            <option value="hospital">Hospital Administrator / Health System</option>
+            <option value="pharmacy">Pharmacy Partner</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="form-message" name="message" rows="3" placeholder="Tell us about your medication management needs..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="var(--secondary)">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+    </svg>
+    <div>
+      <div style="font-weight: 700; font-size: 0.95rem;">Request Submitted!</div>
+      <div style="font-size: 0.85rem; color: #94A3B8;">An NX Medi representative will reach out to you within 24 hours.</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
