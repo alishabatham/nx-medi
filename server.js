@@ -183,7 +183,7 @@ app.get('/api/responses', async (req, res) => {
 
 // Fallback route for index.html
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
