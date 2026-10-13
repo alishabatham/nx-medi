@@ -223,6 +223,34 @@ img {
   font-weight: 800;
   color: var(--navy-dark);
   letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-normal), filter var(--transition-normal);
+  filter: drop-shadow(0 2px 8px rgba(13, 148, 136, 0.12));
+}
+
+.logo:hover .brand-logo {
+  transform: translateY(-1px) scale(1.03);
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.footer-brand-logo {
+  height: 54px;
+  width: auto;
+  max-width: 200px;
+  filter: drop-shadow(0 2px 12px rgba(16, 185, 129, 0.2));
 }
 
 .logo-icon {
@@ -1840,6 +1868,14 @@ img {
   }
 
   /* Header & Mobile Nav */
+  .brand-logo {
+    height: 38px;
+  }
+
+  .footer-brand-logo {
+    height: 44px;
+  }
+
   .nav-links, .nav-actions {
     display: none;
   }
